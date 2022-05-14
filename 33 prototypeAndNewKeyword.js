@@ -1,7 +1,8 @@
 //Prototype
 //every function that we create in javascript, comes with an
 // almost emtpy object for us to use. We can add properties to it, functions to it and whatnot.
-//Only fucntions have proptotypes. Only functions. Not objects or arrays anything else
+//Only fucntions have proptotypes. Only functions. 
+//Not objects or arrays (arrays do but we will talk about it later) anything else
 //We can think of it as empty space provided to use by javascript to play around.
 
 // const about = function ()
@@ -11,6 +12,7 @@
 // console.log(about.prototype)
 //Output
 //{constructor: ƒ}
+
 //As we can see that prototype is just an object that has constructor initially
 // // We can add to it e.g
 // about.prototype.description = "dummy description"

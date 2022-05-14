@@ -31,9 +31,29 @@
 
 // now 'this' in the about method becomes person2 even though it is being called by person 1
 
-//We can just extract the about function form person 1 and use that funciton with any object using call() funciotn and passing that object
+//We can just extract the about function form person 1 and use that funciton with any object
+// using call() funciotn and passing that object
 //as argument to call(). it will consider it as this
 //e.g
+// function about(){
+//     console.log(`name is ${this.firstName} and age  is ${this.age}`)
+//     console.log(`hobby is ${hobby} and passion  is ${passion}`)
+// }
+// const person1 = {
+//     firstName:'ali',
+//     age:18,
+    
+// }
+
+// const person2={
+//     firstName:'Akram',
+//     age:19
+// }
+// about.call(person1);
+// about.call(person2);
+
+
+// we can pass extra arguments to call as well as shown below
 // function about(hobby, passion){
 //     console.log(`name is ${this.firstName} and age  is ${this.age}`)
 //     console.log(`hobby is ${hobby} and passion  is ${passion}`)
@@ -50,12 +70,9 @@
 // }
 // about.call(person1 , 'cricket' , 'cricket');
 // about.call(person2 , 'football' , 'football');
-// we can pass extra arguments to call as well as shown above
 
 //APPLY FUNCTION
-//apply is same as call() function but it allows us to pass extra arguments 
-// as array
-//e.g
+//apply is same as call() function but it allows us to pass extra arguments as array e.g
 //about.apply(person1 , ['test' , 'test2'])
 
 //BIND FUNCTION
@@ -87,7 +104,7 @@
 // myfunct();
 
 
-// This in ARROW FUNCTIONS
+// "This" in ARROW FUNCTIONS
 // arrow functions do not have its own 'this'
 //Arrow functions always gets the this from one level up
 

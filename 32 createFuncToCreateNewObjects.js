@@ -72,7 +72,7 @@
 
 //What will happen if i try to access key1 from obj2?
 //console.log(obj2.key1)
-//I will create an error obviously.
+//It will create an error obviously.
 // But i want to be able to access that from obj2. but how?
 // That's how
 
@@ -86,7 +86,7 @@
 // const obj2 = Object.create(obj1)
 // console.log(obj2);
 // // when we print obj2,it will be an empty object
-// // but followin works e.g obj2 can access key1 of obj1.
+// // but following works e.g obj2 can access key1 of obj1.
 // console.log(obj2.key1)
 
 // But HOW? how indeed,
@@ -96,7 +96,7 @@
 // If we create a simple object then, its [ProtoType] will be
 // window object
 
-// When ever we try to access a key in a object, javascript
+// Whenever we try to access a key in a object, javascript
 //first looks for that key in the current object, if it's not found
 // it looks for it in its __proto__
 
@@ -128,6 +128,6 @@
 // }
 
 // const user1 = createFunction('ali' , 'imran', "115" , 19, 'a@b.com')
-// //console.log(user1)
+// console.log(user1)
 // console.log(user1.showEmail())
 
