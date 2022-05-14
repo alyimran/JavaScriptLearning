@@ -5,9 +5,9 @@ const person = {
     phone:'0321'
 }
 
-const {name:myName, caste:myCaste , ...restPros} = person;
+const {name, caste , ...restPros} = person;
 
-console.log(myName , myCaste , restPros)
+console.log(name , caste , restPros)
 
 
 //Array destrucuring
