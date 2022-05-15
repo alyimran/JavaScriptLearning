@@ -5,6 +5,9 @@ const isEveryItemEven = numbers.every((number)=>{
 })
 
 console.log(isEveryItemEven)
+//output
+//false
 
-// Every method determines whetere every item of array
+// every method determines whether every item of array
 // satisfies a predeicate passed to it
+// It returns true or false

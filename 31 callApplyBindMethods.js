@@ -54,26 +54,26 @@
 
 
 // we can pass extra arguments to call as well as shown below
-// function about(hobby, passion){
-//     console.log(`name is ${this.firstName} and age  is ${this.age}`)
-//     console.log(`hobby is ${hobby} and passion  is ${passion}`)
-// }
-// const person1 = {
-//     firstName:'ali',
-//     age:18,
+function about(hobby, passion){
+    console.log(`name is ${this.firstName} and age  is ${this.age}`)
+    console.log(`hobby is ${hobby} and passion  is ${passion}`)
+}
+const person1 = {
+    firstName:'ali',
+    age:18,
     
-// }
+}
 
-// const person2={
-//     firstName:'Akram',
-//     age:19
-// }
+const person2={
+    firstName:'Akram',
+    age:19
+}
 // about.call(person1 , 'cricket' , 'cricket');
 // about.call(person2 , 'football' , 'football');
 
 //APPLY FUNCTION
 //apply is same as call() function but it allows us to pass extra arguments as array e.g
-//about.apply(person1 , ['test' , 'test2'])
+about.apply(person1 , ['test' , 'test2'])
 
 //BIND FUNCTION
 // const aboutfunc =about.bind(person2, "testing , testing 2")
@@ -129,11 +129,11 @@
 
     //SHORT FORM OF METHOD IN OBJECT
     // following way of defining funciton in object is valid
-const person1 = {
-        firstName:'ali',
-        age:18,
-        about(){
-            console.log(`name is ${this.firstName} and age  is ${this.age}`)
-        }
-    }
-    person1.about()
+// const person1 = {
+//         firstName:'ali',
+//         age:18,
+//         about(){
+//             console.log(`name is ${this.firstName} and age  is ${this.age}`)
+//         }
+//     }
+//     person1.about()
